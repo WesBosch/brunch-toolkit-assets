@@ -1,0 +1,45 @@
+/* ==UserStyle==
+@name           Brunch PWA Themes
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Userstyle for Sebanc's Brunch PWA
+@author         Wisteria
+@advanced dropdown option_image "Backgrounds" {
+option_a "Default - Brunch" <<<EOT https://sebanc.github.io/brunch-pwa/images/background/background.png EOT;
+option_b "Dualtone" <<<EOT https://github.com/WesBosch/brunch-toolkit-assets/blob/main/grub-themes/dualtone.png?raw=true EOT;
+option_c "Geography" <<<EOT https://github.com/WesBosch/brunch-toolkit-assets/blob/main/grub-themes/geography.png?raw=true EOT;
+option_d "Golden" <<<EOT https://github.com/WesBosch/brunch-toolkit-assets/blob/main/grub-themes/golden.png?raw=true EOT;
+option_e "Magic" <<<EOT https://github.com/WesBosch/brunch-toolkit-assets/blob/main/grub-themes/magic.png?raw=true EOT;
+option_f "Night" <<<EOT https://github.com/WesBosch/brunch-toolkit-assets/blob/main/grub-themes/night.png?raw=true EOT;
+}
+==/UserStyle== */
+
+@-moz-document domain("sebanc.github.io") {
+    .navbar a {
+        height: 25px;
+    }
+    .navbar a.active {
+        background-color: #4e2f54;
+    }
+    .fleft{
+        background-color: #251a28e6;
+    }
+    .fright{
+        background-image: none;
+    }
+    .box {
+        background: #847c8ee6;
+        height: 80%;
+    }
+    .wrap{
+        background-image: url("/*[[option_image]]*/");
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: right center;
+        height: 100%;
+        width: 100%;
+        top: 30px;
+        bottom: 0;
+        right: 0;
+    }
+}
