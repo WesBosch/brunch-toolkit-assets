@@ -28,7 +28,6 @@ option_f "Night" <<<EOT https://github.com/WesBosch/brunch-toolkit-assets/blob/m
         background-image: none;
     }
     .box {
-        background: #847c8ee6;
         height: 80%;
     }
     .wrap{
